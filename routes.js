@@ -1,5 +1,5 @@
 const routes = {
-    '/user/settings': '/user_settings',
+    '/users-service/user/settings': '/user_settings',
 };
 
 module.exports = routes;
