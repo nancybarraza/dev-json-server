@@ -9,9 +9,9 @@ server.use(middlewares);
 server.use(jsonServer.rewriter(routes));
 server.use(jsonServer.bodyParser);
 server.use((req, res, next) => {
-    // validate if request method is POST, PUT or DELETE and send direct status 200 success
+    // validate if request method is POST, PUT, PATCH or DELETE and send direct status 200 success
     // if catch not it, this clean the mock data with "{}" over property request
-    if (req.method === 'POST' || req.method === 'PUT' || req.method === 'DELETE') {
+    if (req.method === 'POST' || req.method === 'PUT' || req.method === 'DELETE' || req.method === 'PATCH') {
         res.status(200).jsonp({
             success: true,
             result: {}
