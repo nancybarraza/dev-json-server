@@ -1,26 +1,17 @@
-
-const sitesList = require("./db/sites-service/sitesList");
-const userSettings = require("./db/users-service/user-settings");
-const chartsEnergy = require("./db/charts-service/energy-production");
+const { endpoints } = require("./endpoints");
 /**
  * validateUrl
  * Validate url name to return data mock
  * @param {string} url receives url from request
  */
 const validateUrl = (url) => {
-    switch (url) {
-        case '/user_settings':
-            return user_settings;
-        case '/sites':
-            return sitesList;
-        case '/charts_energy':
-            return chartsEnergy;
-        default:
-            return {
-                success: true,
-                result: {},
-              };
-    }    
+  const endpointConfig = endpoints.find(
+    (endpoint) => "/" + endpoint.responseKey === url
+  );
+
+  return endpointConfig && endpointConfig.responseData
+    ? endpointConfig.responseData
+    : {};
 };
 
 module.exports = validateUrl;
