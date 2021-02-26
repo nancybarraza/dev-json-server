@@ -1,5 +1,6 @@
 const routes = require("./routes");
 const jsonServer = require("json-server");
+const validateUrls = require("./responsevalidations");
 const server = jsonServer.create();
 const router = jsonServer.router(require("./db/db.js")());
 const middlewares = jsonServer.defaults();
@@ -17,10 +18,8 @@ server.use((req, res, next) => {
     req.method === "DELETE" ||
     req.method === "PATCH"
   ) {
-    res.status(200).jsonp({
-      success: true,
-      result: {},
-    });
+    const response = validateUrls(req.url);
+    res.status(200).jsonp(response);
   } else {
     next();
   }
