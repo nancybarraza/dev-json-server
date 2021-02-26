@@ -74,5 +74,16 @@
         "smsEnabled": true
       }
     ]
-  }  
+  },
+  "sites":{},
+  "sites_detail": {},
+  "sites_events": {},
+  "sites_telemetry": {},
+  "sites_auditlog": {},
+  "notifications": {},
+  "notifications_dismiss": {},
+  "charts_energy": {},
+  "charts_ess": {},
+  "charts_facility": {},
+  "charts_vehicle": {}
 }
