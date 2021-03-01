@@ -1,12 +1,10 @@
 // db.js
+const { endpoints } = require("./../endpoints");
 
-const sitesList = require("./sites-service/sitesList");
-
-const user_settings = require("./users-service/user-settings");
+let response = {};
+endpoints.forEach((endpoint) => {
+  response[endpoint.responseKey] = endpoint.responseData || {};
+});
 
 // Should export a function which return an object
-
-module.exports = () => ({
-  sites: sitesList,
-  user_settings,
-});
+module.exports = () => response;
