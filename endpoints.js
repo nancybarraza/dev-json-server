@@ -25,7 +25,7 @@ const charts_vehicle = require("./db/charts-service/vehicle-and-fleet");
 
 const endpoints = [
   {
-    endpoint: "/users-service/user/settings",
+    endpoint: "/users-service/users/settings",
     responseKey: "user_settings",
     responseData: user_Settings,
   },
