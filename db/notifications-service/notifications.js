@@ -31,4 +31,12 @@ module.exports = [
     siteId: 5,
     ts: "2021-02-08 13:03:24",
   },
+  {
+    id: "602403d4973bb702f125385a",
+    title: "Notification Title 5",
+    text:
+      "Schneider Electric BB-466-02 Serial Number 654874FBD-FOO is Offline yolo.",
+    siteId: 5,
+    ts: "2021-02-08 13:03:24",
+  },
 ];
