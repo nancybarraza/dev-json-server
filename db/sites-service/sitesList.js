@@ -1,358 +1,203 @@
 // sitesList.js
-module.exports = [
+module.exports = 
+[
   {
     siteId: 1,
-    externalId: "25251sdsdSD111",
-    name: "Bad River",
+    externalId: "a0h3K000000Xlh4QAC",
+    name: "Tony Test",
     plcId: "BADRIVER",
-    icianName: "Elvin Jones",
-    latitude: "9.1231231231",
-    longitude: "34.232323232",
-    companyName: "Atlantida Inc.",
+    icianName: "Todd Connor",
+    externalIcianId: "todd.connor@faithtechnologies.com",
+    address: {
+      addressId: 1,
+      latitude: "30.549935",
+      longitude: "-87.28363069999999"
+    },
+    location: {
+      locationId: 3,
+      locationName: "Location Name",
+      customer: {
+        customerId: 8,
+        companyName: "Company Name"
+      }
+    },
     points: [
       {
         name: "SiteStatus",
         type: "uint16",
         label: "Site Status",
         description: "Site Status",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "MAINTENANCE",
-            value: "1",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "FAULTED",
-            value: "2",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "ALARM",
-            value: "3",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "WARNING",
-            value: "4",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "OK",
-            value: "5",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-        ],
+        valueMin: null,
+        valueMax: null,
         value: "5",
-        active: false,
+        symbolName: "OK",
+        active: false
       },
       {
         name: "IslandMode",
         type: "uint16",
         label: "Island Mode",
         description: "Island Mode",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "Tower Mode",
-            value: "1",
-            label: "Island Mode",
-            description: "Island Mode",
-            active: false,
-          },
-          {
-            name: "Island Mode",
-            value: "2",
-            label: "Island Mode",
-            description: "Island Mode",
-            active: false,
-          },
-        ],
         value: "2",
-        active: false,
+        symbolName: "Island Mode",
+        active: false
       },
       {
         name: "CommStatus",
         type: "uint16",
         label: "Communications Status",
         description: "Communications Status",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "Landline",
-            value: "1",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-          {
-            name: "Cellular",
-            value: "2",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-          {
-            name: "Disconnected",
-            value: "3",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-        ],
+        valueMin: null,
+        valueMax: null,
         value: "3",
-        active: false,
-      },
-    ],
+        symbolName: "Disconnected",
+        active: false
+      }
+    ]
   },
   {
     siteId: 2,
     externalId: "78251xxffSD666",
     name: "Lab 3",
     plcId: "LAB3",
-    icianName: "Bruce Dickinson",
-    latitude: "12.1234455231",
-    longitude: "6.778899232",
-    companyName: "Umbrella Inc.",
+    icianName: "Ician 1",
+    externalIcianId: "ician1@faithtechnologies.com",
+    address: {
+      addressId: 3,
+      latitude: "39.0954158",
+      longitude: "-94.60573959999999"
+    },
+    location: {
+      locationId: 3,
+      locationName: "Location Name",
+      customer: {
+        customerId: 8,
+        companyName: "Company Name"
+      }
+    },
     points: [
       {
         name: "SiteStatus",
         type: "uint16",
         label: "Site Status",
         description: "Site Status",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "MAINTENANCE",
-            value: "1",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "FAULTED",
-            value: "2",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "ALARM",
-            value: "3",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "WARNING",
-            value: "4",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "OK",
-            value: "5",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-        ],
+        valueMin: null,
+        valueMax: null,
         value: "3",
-        active: false,
+        symbolName: "OK",
+        active: false
       },
       {
         name: "IslandMode",
         type: "uint16",
         label: "Island Mode",
         description: "Island Mode",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "Tower Mode",
-            value: "1",
-            label: "Island Mode",
-            description: "Island Mode",
-            active: false,
-          },
-          {
-            name: "Island Mode",
-            value: "2",
-            label: "Island Mode",
-            description: "Island Mode",
-            active: false,
-          },
-        ],
         value: "2",
-        active: false,
+        symbolName: "Island Mode",
+        active: false
       },
       {
         name: "CommStatus",
         type: "uint16",
         label: "Communications Status",
         description: "Communications Status",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "Landline",
-            value: "1",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-          {
-            name: "Cellular",
-            value: "2",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-          {
-            name: "Disconnected",
-            value: "3",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-        ],
+        valueMin: null,
+        valueMax: null,
         value: "3",
-        active: false,
-      },
-    ],
+        symbolName: "Disconnected",
+        active: false
+      }
+    ]
   },
   {
     siteId: 3,
     externalId: "25901ddrrFX999",
     name: "Development",
     plcId: "DEV",
-    icianName: "Ronnie James Dio",
-    latitude: "155.1236466666",
-    longitude: "99.582469232",
-    companyName: "Microsoft Inc.",
+    icianName: "IcianRonnie James Dio",
+    externalIcianId: "ician1@faithtechnologies.com",
+    address: {
+      addressId: 3,
+      latitude: "155.1236466666",
+      longitude: "99.582469232"
+    },
+    location: {
+      locationId: 3,
+      locationName: "Location Name",
+      customer: {
+        customerId: 8,
+        companyName: "Company Name"
+      }
+    },
     points: [
       {
         name: "SiteStatus",
         type: "uint16",
         label: "Site Status",
         description: "Site Status",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "MAINTENANCE",
-            value: "1",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "FAULTED",
-            value: "2",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "ALARM",
-            value: "3",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "WARNING",
-            value: "4",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "OK",
-            value: "5",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-        ],
+        valueMin: null,
+        valueMax: null,
         value: "2",
-        active: false,
+        symbolName: "FAULTED",
+        active: false
       },
       {
         name: "IslandMode",
         type: "uint16",
         label: "Island Mode",
         description: "Island Mode",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "Tower Mode",
-            value: "1",
-            label: "Island Mode",
-            description: "Island Mode",
-            active: false,
-          },
-          {
-            name: "Island Mode",
-            value: "2",
-            label: "Island Mode",
-            description: "Island Mode",
-            active: false,
-          },
-        ],
         value: "1",
-        active: false,
+        symbolName: "Tower Mode",
+        active: false
       },
       {
         name: "CommStatus",
         type: "uint16",
         label: "Communications Status",
         description: "Communications Status",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "Landline",
-            value: "1",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-          {
-            name: "Cellular",
-            value: "2",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-          {
-            name: "Disconnected",
-            value: "3",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-        ],
+        valueMin: null,
+        valueMax: null,
         value: "2",
-        active: false,
-      },
-    ],
+        symbolName: "Cellular",
+        active: false
+      }
+    ]
   },
   {
     siteId: 4,
@@ -360,116 +205,64 @@ module.exports = [
     name: "Quality",
     plcId: "QA",
     icianName: "Tobias Sammeth",
-    latitude: "55.66654546666",
-    longitude: "66.998877442",
-    companyName: "Apple Inc.",
+    externalIcianId: "ician1@faithtechnologies.com",
+    address: {
+      addressId: 3,
+      latitude: "44.2044953",
+      longitude: "-88.45100619999999"
+    },
+    location: {
+      locationId: 3,
+      locationName: "Location Name",
+      customer: {
+        customerId: 8,
+        companyName: "Company Name"
+      }
+    },
     points: [
       {
         name: "SiteStatus",
         type: "uint16",
         label: "Site Status",
         description: "Site Status",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "MAINTENANCE",
-            value: "1",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "FAULTED",
-            value: "2",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "ALARM",
-            value: "3",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "WARNING",
-            value: "4",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-          {
-            name: "OK",
-            value: "5",
-            label: "Site Status",
-            description: "Site Status",
-            active: false,
-          },
-        ],
+        valueMin: null,
+        valueMax: null,
         value: "1",
-        active: false,
+        symbolName: "MAINTENANCE",
+        active: false
       },
       {
         name: "IslandMode",
         type: "uint16",
         label: "Island Mode",
         description: "Island Mode",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "Tower Mode",
-            value: "1",
-            label: "Island Mode",
-            description: "Island Mode",
-            active: false,
-          },
-          {
-            name: "Island Mode",
-            value: "2",
-            label: "Island Mode",
-            description: "Island Mode",
-            active: false,
-          },
-        ],
         value: "1",
-        active: false,
+        symbolName: "Tower Mode",
+        active: false
       },
       {
         name: "CommStatus",
         type: "uint16",
         label: "Communications Status",
         description: "Communications Status",
+        sf: null,
+        units: null,
         access: "R",
         mandatory: "true",
-        symbols: [
-          {
-            name: "Landline",
-            value: "1",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-          {
-            name: "Cellular",
-            value: "2",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-          {
-            name: "Disconnected",
-            value: "3",
-            label: "Communication Status",
-            description: "Communication Status",
-            active: false,
-          },
-        ],
+        valueMin: null,
+        valueMax: null,
         value: "1",
-        active: false,
-      },
-    ],
-  },
+        symbolName: "Landline",
+        active: false
+      }
+    ]
+  }
 ];

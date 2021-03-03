@@ -1,8 +1,8 @@
 module.exports = {
   siteId: 1,
-  externalId: "25251",
-  name: "Site 1",
-  plcId: 50,
+  externalId: "a0h3K000000Xlh4QAC",
+  name: "Tony Test",
+  plcId: "BADRIVER",
   icianName: "ICIAN NAME",
   statusId: 4,
   connectionStatusId: 1,
@@ -13,12 +13,13 @@ module.exports = {
       customerId: 8,
       companyName: "Company Name",
       primaryContact: {
+        contactId: 1,
         firstName: "Jonas",
         lastName: "McQuinn",
         email: "jmcquinn@bwcardiology.com",
         mobilePhone: "(858) 123-4567",
-        officePhone: "(858) 987-6543",
-      },
+        officePhone: "(858) 987-6543"
+      }
     },
     address: {
       addressId: 1,
@@ -27,22 +28,23 @@ module.exports = {
       city: "City",
       state: "State",
       postalCode: 44540,
-      latitude: 39.9697894,
-      longitude: -75.1585807,
-    },
+      latitude: "30.549935",
+      longitude: "-87.28363069999999"
+    }
   },
   address: {
     addressId: 1,
     addressLine1: "2345 El Rio Ave",
-    addressLine2: "",
+    addressLine2: "Address Site 2",
     city: "Blue Bell",
     state: "PA",
     postalCode: 18920,
-    latitude: 39.9697894,
-    longitude: -75.1585807,
+    latitude: "30.549935",
+    longitude: "-87.28363069999999"
   },
   tariffStructure: {
-    tariff: "Pacific Gas Electric",
-    utility: "NEM2VMSH",
-  },
+    id: 1,
+    utility: "Pacific Gas Electric",
+    tariffStructure: "NEM2VMSH"
+  }
 };
