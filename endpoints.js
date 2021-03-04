@@ -5,6 +5,7 @@ const user_Settings = require("./db/users-service/user-settings");
 
 // sites-service
 const sitesList = require("./db/sites-service/sitesList");
+const sitesIcianUsers = require("./db/sites-service/assigned-users");
 const auditLogList = require("./db/sites-service/audit-log-list");
 const siteEvents = require("./db/sites-service/site-events");
 const siteInformation = require("./db/sites-service/site-information");
@@ -38,6 +39,11 @@ const endpoints = [
     endpoint: "/sites-service/sites/?timestamp=:time",
     responseKey: "sites",
     responseData: sitesList,
+  },
+  {
+    endpoint: "/sites-service/sites/assigned-user",
+    responseKey: "sites_ician_users",
+    responseData: sitesIcianUsers,
   },
   {
     endpoint: "/sites-service/sites/:siteId",
