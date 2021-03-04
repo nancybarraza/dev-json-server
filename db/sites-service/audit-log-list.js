@@ -8,14 +8,14 @@ module.exports = [
   },
   {
     id: 2,
-   actionType : "Change in Bus Band Configuration",
+    actionType : "Change in Bus Band Configuration",
     actionDescription : "The Bus Band parameter \"Bus Band Parameter Name\" was changed to Busband New Name. The prior value was Busband Old Name",
     source : "David Butler",
     date : "1614885453427"
   },
   {
     id: 3,
-     actionType : "Change in Bus Band Configuration",
+    actionType : "Change in Bus Band Configuration",
     actionDescription : "The Bus Band parameter \"Bus Band Parameter Name\" was changed to Busband New Name. The prior value was Busband Old Name",
     source : "David Butler",
     date : "1614885453427"
@@ -23,7 +23,7 @@ module.exports = [
   {
     id: 4,
     date: "Jan 1, 2020, 2:59:31 PM",
-     actionType : "Change in Bus Band Configuration",
+    actionType : "Change in Bus Band Configuration",
     actionDescription : "The Bus Band parameter \"Bus Band Parameter Name\" was changed to Busband New Name. The prior value was Busband Old Name",
     source : "David Butler",
     date : "1614885453427"
@@ -45,14 +45,14 @@ module.exports = [
   },
   {
     id: 7,
-     actionType : "Change in Bus Band Configuration",
+    actionType : "Change in Bus Band Configuration",
     actionDescription : "The Bus Band parameter \"Bus Band Parameter Name\" was changed to Busband New Name. The prior value was Busband Old Name",
     source : "David Butler",
     date : "1614885744807"
   },
   {
     id: 8,
-   actionType : "Change in Bus Band Configuration",
+    actionType : "Change in Bus Band Configuration",
     actionDescription : "The Bus Band parameter \"Bus Band Parameter Name\" was changed to Busband New Name. The prior value was Busband Old Name",
     source : "David Butler",
     date : "1614885750602"
