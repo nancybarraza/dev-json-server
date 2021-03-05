@@ -9,6 +9,7 @@ const sitesIcianUsers = require("./db/sites-service/assigned-users");
 const auditLogList = require("./db/sites-service/audit-log-list");
 const siteEvents = require("./db/sites-service/site-events");
 const siteInformation = require("./db/sites-service/site-information");
+const siteBusBand = require("./db/sites-service/bus-band");
 
 // notifications-service
 const notificationsDismiss = require("./db/notifications-service/notification-dismiss");
@@ -63,6 +64,11 @@ const endpoints = [
     endpoint: "/sites-service/sites/:siteId/audit-log",
     responseKey: "sites_auditlog",
     responseData: auditLogList,
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/busband",
+    responseKey: "bus_band",
+    responseData: siteBusBand,
   },
   {
     endpoint: "/notifications-service/notifications/",
