@@ -5,7 +5,7 @@ module.exports = [
       {
         siteId: 1,
         deviceGroupId: 1,
-        deviceId: 1,
+        deviceId: 26,
         deviceName: "BATT1",
         title: "Warning BATT1",
         description:
@@ -16,7 +16,7 @@ module.exports = [
       {
         siteId: 1,
         deviceGroupId: 7,
-        deviceId: 5,
+        deviceId: 261,
         deviceName: "BATT1",
         title: "Warning BATT1",
         description:
@@ -26,7 +26,7 @@ module.exports = [
       {
         siteId: 1,
         deviceGroupId: 11,
-        deviceId: 6,
+        deviceId: 5,
         deviceName: "BATT1",
         title: "Warning BATT1",
         description:
@@ -41,7 +41,7 @@ module.exports = [
       {
         siteId: 1,
         deviceGroupId: 11,
-        deviceId: 2,
+        deviceId: 261,
         deviceName: "BATT1",
         title: "Fault BATT1",
         description:
@@ -51,7 +51,7 @@ module.exports = [
       {
         siteId: 1,
         deviceGroupId: 5,
-        deviceId: 4,
+        deviceId: 264,
         deviceName: "BATT1",
         title: "Fault BATT1",
         description:
@@ -76,7 +76,7 @@ module.exports = [
       {
         siteId: 1,
         deviceGroupId: 4,
-        deviceId: 3,
+        deviceId: 263,
         deviceName: "BATT1",
         title: "Alarm BATT1",
         description:

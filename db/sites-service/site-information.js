@@ -45,4 +45,5 @@ module.exports = {
     tariff: "Pacific Gas Electric",
     utility: "NEM2VMSH",
   },
+  sharePointUrl: "https://www.sharepoint.com",
 };
