@@ -5,9 +5,11 @@ const user_Settings = require("./db/users-service/user-settings");
 
 // sites-service
 const sitesList = require("./db/sites-service/sitesList");
+const sitesIcianUsers = require("./db/sites-service/assigned-users");
 const auditLogList = require("./db/sites-service/audit-log-list");
 const siteEvents = require("./db/sites-service/site-events");
 const siteInformation = require("./db/sites-service/site-information");
+const siteBusBand = require("./db/sites-service/bus-band");
 
 // notifications-service
 const notificationsDismiss = require("./db/notifications-service/notification-dismiss");
@@ -40,6 +42,11 @@ const endpoints = [
     responseData: sitesList,
   },
   {
+    endpoint: "/sites-service/sites/assigned-user",
+    responseKey: "sites_ician_users",
+    responseData: sitesIcianUsers,
+  },
+  {
     endpoint: "/sites-service/sites/:siteId",
     responseKey: "sites_detail",
     responseData: siteInformation,
@@ -57,6 +64,11 @@ const endpoints = [
     endpoint: "/sites-service/sites/:siteId/audit-log",
     responseKey: "sites_auditlog",
     responseData: auditLogList,
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/busband",
+    responseKey: "bus_band",
+    responseData: siteBusBand,
   },
   {
     endpoint: "/notifications-service/notifications/",
