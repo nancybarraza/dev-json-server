@@ -1,7 +1,7 @@
 module.exports = [
   {
     id: "602403d4973bb702f165485a",
-    title: "Notification Title",
+    title: "Notification Title Test",
     text:
       "Schneider Electric BB-466-02 Serial Number 3216842FBD-FOO is Offline.",
     siteId: 1,
