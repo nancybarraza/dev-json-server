@@ -19,6 +19,9 @@ const charts_facility = require("./db/charts-service/facility-usage-production")
 const charts_energy = require("./db/charts-service/energy-production");
 const charts_ess = require("./db/charts-service/ess-states");
 
+// device-service
+const devicesList = require("./db/device-service/devices-list");
+
 // This data is not being consumed/making http call to get data from SERVER.
 // This is still working with internal mock data on DCentriQ APP files.
 // I leave this here to be ready when http request has been integrated.
@@ -93,6 +96,11 @@ const endpoints = [
     endpoint: "/charts-service/charts/vehicle-and-fleets",
     responseKey: "charts_vehicle",
     responseData: charts_vehicle,
+  },
+  {
+    endpoint: "/devices-service/devices/:siteId",
+    responseKey: "devicesList",
+    responseData: devicesList,
   },
 ];
 
