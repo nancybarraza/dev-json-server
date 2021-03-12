@@ -11,7 +11,7 @@ module.exports = [
     deviceStatusId: 1,
     deviceGroupId: 1,
     gridStatus: false,
-    lcmLocation: 1, // Container
+    lcmLocation: 2, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 3, // Position
     make: "80kW, 3-Phase, 480 VAC",
@@ -37,7 +37,7 @@ module.exports = [
     deviceStatusId: 2,
     deviceGroupId: 1,
     gridStatus: true,
-    lcmLocation: 1, // Container
+    lcmLocation: 4, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 4, // Position
     make: "80kW, 3-Phase, 480 VAC",
@@ -63,7 +63,7 @@ module.exports = [
     deviceStatusId: 3,
     deviceGroupId: 1,
     gridStatus: true,
-    lcmLocation: 1, // Container
+    lcmLocation: 3, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 3, // Position
     make: "80kW, 3-Phase, 480 VAC",
@@ -89,7 +89,7 @@ module.exports = [
     deviceStatusId: 4,
     deviceGroupId: 1,
     gridStatus: false,
-    lcmLocation: 1, // Container
+    lcmLocation: 2, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 4, // Position
     make: "80kW, 3-Phase, 480 VAC",
@@ -141,7 +141,7 @@ module.exports = [
     deviceStatusId: 3,
     deviceGroupId: 5,
     gridStatus: true,
-    lcmLocation: 1, // Container
+    lcmLocation: 3, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 4, // Position
     make: "80kW, 3-Phase, 480 VAC",
@@ -167,7 +167,7 @@ module.exports = [
     deviceStatusId: 3,
     deviceGroupId: 6,
     gridStatus: false,
-    lcmLocation: 1, // Container
+    lcmLocation: 3, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 3, // Position
     make: "80kW, 3-Phase, 480 VAC",
@@ -193,7 +193,7 @@ module.exports = [
     deviceStatusId: 2,
     deviceGroupId: 7,
     gridStatus: true,
-    lcmLocation: 1, // Container
+    lcmLocation: 2, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 4, // Position
     make: "80kW, 3-Phase, 480 VAC",
@@ -271,7 +271,7 @@ module.exports = [
     deviceStatusId: 1,
     deviceGroupId: 7,
     gridStatus: true,
-    lcmLocation: 1, // Container
+    lcmLocation: 4, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 4, // Position
     make: "80kW, 3-Phase, 480 VAC",
@@ -323,7 +323,7 @@ module.exports = [
     deviceStatusId: 4,
     deviceGroupId: 8,
     gridStatus: false,
-    lcmLocation: 1, // Container
+    lcmLocation: 4, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 3, // Position
     make: "80kW, 3-Phase, 480 VAC",
@@ -375,7 +375,7 @@ module.exports = [
     deviceStatusId: 1,
     deviceGroupId: 10,
     gridStatus: false,
-    lcmLocation: 1, // Container
+    lcmLocation: 2, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 4, // Position
     make: "80kW, 3-Phase, 480 VAC",

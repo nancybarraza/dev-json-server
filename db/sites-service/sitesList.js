@@ -7,8 +7,8 @@ module.exports = [
     plcId: "BADRIVER",
     externalIcianId: "todd.connor@faithtechnologies.com",
     icianName: "Todd Connor",
-    latitude: "9.1231231231",
-    longitude: "34.232323232",
+    latitude: "39.9697894",
+    longitude: "-75.1585807",
     companyName: "Atlantida Inc.",
     points: [
       {
@@ -126,8 +126,8 @@ module.exports = [
     plcId: "LAB3",
     externalIcianId: "john.vanlinn@faithtechnologies.com",
     icianName: "John Van Linn",
-    latitude: "12.1234455231",
-    longitude: "6.778899232",
+    latitude: "40.0438137",
+    longitude: "-75.0790643",
     companyName: "Umbrella Inc.",
     points: [
       {
@@ -245,8 +245,8 @@ module.exports = [
     plcId: "DEV",
     externalIcianId: "chuck.sands@faithtechnologies.com",
     icianName: "Chuck Sands",
-    latitude: "155.1236466666",
-    longitude: "99.582469232",
+    latitude: "40.0024137",
+    longitude: "-75.2581124",
     companyName: "Microsoft Inc.",
     points: [
       {
@@ -364,8 +364,8 @@ module.exports = [
     plcId: "QA",
     externalIcianId: "daniel.peterson@faithtechnologies.com",
     icianName: "Dan Peterson",
-    latitude: "55.66654546666",
-    longitude: "66.998877442",
+    latitude: "40.0438137",
+    longitude: "-75.0790643",
     companyName: "Apple Inc.",
     points: [
       {
