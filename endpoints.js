@@ -113,6 +113,21 @@ const endpoints = [
     endpoint: "/devices-service/devices/:deviceId/status",
     responseKey: "deviceStatus",
     responseData: deviceStatus,
+    regexpOriginalUrl: /\/devices-service\/devices\/([0-9]*)\/status/,
+    getSpecialData: (originalUrl, regexpOriginalUrl, responseData) => {
+      // Device Status
+      const array = originalUrl.match(regexpOriginalUrl);
+      const deviceId = array[1];
+
+      // Get deviceId mod to alternate device Id status
+      const deviceIdToReturn = deviceId % 2 ? 1 : 2;
+
+      const deviceStatus = responseData.find(
+        (value) => value.deviceId === deviceIdToReturn
+      );
+
+      return deviceStatus.status;
+    },
   },
 ];
 
