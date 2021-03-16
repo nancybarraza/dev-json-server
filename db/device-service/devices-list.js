@@ -399,7 +399,7 @@ module.exports = [
     buildNo: "1.007.00bn1",
     siteId: 1,
     deviceStatusId: 6,
-    deviceGroupId: 11,
+    deviceGroupId: 9,
     gridStatus: true,
     lcmLocation: 1, // Container
     lcmRackNum: 2, // Rack
