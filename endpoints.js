@@ -19,6 +19,7 @@ const notifications = require("./db/notifications-service/notifications");
 const charts_facility = require("./db/charts-service/facility-usage-production");
 const charts_energy = require("./db/charts-service/energy-production");
 const charts_ess = require("./db/charts-service/ess-states");
+const share_reports = require("./db/charts-service/share-reports");
 
 // device-service
 const devicesList = require("./db/device-service/devices-list");
@@ -128,6 +129,11 @@ const endpoints = [
 
       return deviceStatus.status;
     },
+  },
+  {
+    endpoint: "/charts-service/charts/share-reports",
+    responseKey: "share_reports",
+    responseData: share_reports,
   },
 ];
 
