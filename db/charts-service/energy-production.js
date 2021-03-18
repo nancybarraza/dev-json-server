@@ -197,7 +197,7 @@ module.exports = {
           },
           {
             name: 'Dec',
-            value: 44,
+            value: 54,
           }
     ]
 };
