@@ -3,18 +3,18 @@ module.exports = {
   externalId: "25251",
   name: "Site 1",
   plcId: 50,
-  icianName: "ICIAN NAME_DG",
+  icianName: "ICIAN NAME",
   statusId: 4,
   connectionStatusId: 1,
   location: {
     locationId: 3,
-    locationName: "Location Name_DG",
+    locationName: "Location Name",
     customer: {
       customerId: 8,
-      companyName: "Company Name_DG",
+      companyName: "Company Name",
       primaryContact: {
-        firstName: "Jonas_DG",
-        lastName: "McQuinn_DG",
+        firstName: "Jonas",
+        lastName: "McQuinn",
         email: "jmcquinn@bwcardiology.com",
         mobilePhone: "(858) 123-4567",
         officePhone: "(858) 987-6543",
@@ -22,8 +22,8 @@ module.exports = {
     },
     address: {
       addressId: 1,
-      addressLine1: "Address Location 1_DG",
-      addressLine2: "Address Location 2_DG",
+      addressLine1: "Address Location 1",
+      addressLine2: "Address Location 2",
       city: "City",
       state: "State",
       postalCode: 44540,
@@ -33,7 +33,7 @@ module.exports = {
   },
   address: {
     addressId: 1,
-    addressLine1: "2345 El Rio Ave_DG",
+    addressLine1: "2345 El Rio Ave",
     addressLine2: "",
     city: "Blue Bell",
     state: "PA",
