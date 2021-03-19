@@ -241,7 +241,7 @@ module.exports = [
   {
     siteId: 3,
     externalId: "25901ddrrFX999",
-    name: "Development TEST SJ",
+    name: "Development",
     plcId: "DEV",
     externalIcianId: "chuck.sands@faithtechnologies.com",
     icianName: "Chuck Sands",
