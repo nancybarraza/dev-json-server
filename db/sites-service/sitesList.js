@@ -2,7 +2,7 @@
 module.exports = [
   {
     siteId: 1,
-    externalId: "25251sdsdSD111_sDG",
+    externalId: "25251sdsdSD111",
     name: "Bad River",
     plcId: "BADRIVER",
     externalIcianId: "todd.connor@faithtechnologies.com",
@@ -62,9 +62,9 @@ module.exports = [
         name: "IslandMode",
         type: "uint16",
         label: "Island Mode",
-        description: "Island Mode_DG",
+        description: "Island Mode",
         access: "R",
-        mandatory: "false",
+        mandatory: "true",
         symbols: [
           {
             name: "Tower Mode",
@@ -81,7 +81,7 @@ module.exports = [
             active: false,
           },
         ],
-        value: "3",
+        value: "2",
         active: false,
       },
       {
@@ -93,7 +93,7 @@ module.exports = [
         mandatory: "true",
         symbols: [
           {
-            name: "Landline_DG",
+            name: "Landline",
             value: "1",
             label: "Communication Status",
             description: "Communication Status",
@@ -143,14 +143,14 @@ module.exports = [
             value: "1",
             label: "Site Status",
             description: "Site Status",
-            active: true,
+            active: false,
           },
           {
             name: "FAULTED",
             value: "2",
             label: "Site Status",
             description: "Site Status",
-            active: true,
+            active: false,
           },
           {
             name: "ALARM",
@@ -164,7 +164,7 @@ module.exports = [
             value: "4",
             label: "Site Status",
             description: "Site Status",
-            active: true,
+            active: false,
           },
           {
             name: "OK",
@@ -472,7 +472,7 @@ module.exports = [
           },
         ],
         value: "1",
-        active: true,
+        active: false,
       },
     ],
   },
