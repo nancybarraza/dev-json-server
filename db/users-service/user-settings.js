@@ -32,7 +32,7 @@ module.exports = {
       notificationPreferenceId: 3,
       notificationPreferenceType: {
         notificationPreferenceTypeId: 3,
-        name: "Maintenance Mode Initiated",
+        name: "Maintenance Mode Initiated_DG",
       },
       emailEnabled: true,
       smsEnabled: true,
@@ -50,7 +50,7 @@ module.exports = {
       notificationPreferenceId: 5,
       notificationPreferenceType: {
         notificationPreferenceTypeId: 5,
-        name: "New Device at Site",
+        name: "New Device at Site_DG",
       },
       emailEnabled: true,
       smsEnabled: true,
@@ -68,7 +68,7 @@ module.exports = {
       notificationPreferenceId: 7,
       notificationPreferenceType: {
         notificationPreferenceTypeId: 7,
-        name: "Device Removed From Site",
+        name: "Device Removed From Site_DG",
       },
       emailEnabled: true,
       smsEnabled: true,
