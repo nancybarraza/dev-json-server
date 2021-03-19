@@ -3,7 +3,7 @@ module.exports = [
   {
     siteId: 1,
     externalId: "25251sdsdSD111_sDG",
-    name: "Bad River TEST SJ",
+    name: "Bad River",
     plcId: "BADRIVER",
     externalIcianId: "todd.connor@faithtechnologies.com",
     icianName: "Todd Connor",
@@ -122,7 +122,7 @@ module.exports = [
   {
     siteId: 2,
     externalId: "78251xxffSD666",
-    name: "Lab 3 TEST SJ",
+    name: "Lab 3",
     plcId: "LAB3",
     externalIcianId: "john.vanlinn@faithtechnologies.com",
     icianName: "John Van Linn",
@@ -360,7 +360,7 @@ module.exports = [
   {
     siteId: 4,
     externalId: "25901ddrrFX999",
-    name: "Quality TEST SJ",
+    name: "Quality",
     plcId: "QA",
     externalIcianId: "daniel.peterson@faithtechnologies.com",
     icianName: "Dan Peterson",
