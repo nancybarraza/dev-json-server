@@ -8,9 +8,9 @@ module.exports = [
     uniqueIdentifier: "1234567890 JG",
     buildNo: "1.007.00bn1 JG",
     siteId: 9,
-    deviceStatusId: 2,
+    deviceStatusId: 6,
     deviceGroupId: 1,
-    gridStatus: false,
+    gridStatus: true,
     lcmLocation: 2, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 3, // Position
