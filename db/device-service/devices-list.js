@@ -1,28 +1,28 @@
 module.exports = [
   {
     deviceId: 61,
-    deviceName: "Inverter 61",
+    deviceName: "Inverter 61 JG",
     deviceNum: 4,
-    firmwareVersion: "1.1",
+    firmwareVersion: "1.1 JG",
     serialNo: "S1",
-    uniqueIdentifier: "1234567890",
-    buildNo: "1.007.00bn1",
+    uniqueIdentifier: "1234567890 JG",
+    buildNo: "1.007.00bn1 JG",
     siteId: 9,
-    deviceStatusId: 1,
+    deviceStatusId: 2,
     deviceGroupId: 1,
     gridStatus: false,
     lcmLocation: 2, // Container
     lcmRackNum: 2, // Rack
     lcmPositionNum: 3, // Position
-    make: "80kW, 3-Phase, 480 VAC",
+    make: "80kW, 3-Phase, 480 VAC JG",
     deviceModel: {
       deviceModelId: 9,
-      model: "MARK5",
-      energyRating: "Energy Rating",
+      model: "MARK5 JG",
+      energyRating: "Energy Rating JG",
     },
     deviceType: {
       deviceTypeId: 7,
-      deviceTypeName: "Device Type Name",
+      deviceTypeName: "Device Type Name JG",
     },
   },
   {
