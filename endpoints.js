@@ -2,6 +2,7 @@
 
 // users-service
 const user_Settings = require("./db/users-service/user-settings");
+const okta_users = require("./db/users-service/users-okta");
 
 // sites-service
 const sitesList = require("./db/sites-service/sitesList");
@@ -10,6 +11,7 @@ const auditLogList = require("./db/sites-service/audit-log-list");
 const siteEvents = require("./db/sites-service/site-events");
 const siteInformation = require("./db/sites-service/site-information");
 const siteBusBand = require("./db/sites-service/bus-band");
+const site_permissions = require("./db/sites-service/site-permissions");
 
 // notifications-service
 const notificationsDismiss = require("./db/notifications-service/notification-dismiss");
@@ -35,6 +37,11 @@ const endpoints = [
     endpoint: "/users-service/users/settings",
     responseKey: "user_settings",
     responseData: user_Settings,
+  },
+  {
+    endpoint: "/users-service/users/okta/users",
+    responseKey: "okta_users",
+    responseData: okta_users,
   },
   {
     endpoint: "/sites-service/sites/",
@@ -76,6 +83,16 @@ const endpoints = [
     responseData: siteBusBand,
   },
   {
+    endpoint: "/sites-service/sites/:siteId/permissions",
+    responseKey: "site_permissions",
+    responseData: site_permissions,
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/permissions/:userId",
+    responseKey: "site_permissions_delete",
+    responseData: { status: '200 OK' },
+  },
+  {
     endpoint: "/notifications-service/notifications/",
     responseKey: "notifications",
     responseData: notifications,
@@ -106,6 +123,11 @@ const endpoints = [
     responseData: charts_vehicle,
   },
   {
+    endpoint: "/charts-service/charts/share-reports",
+    responseKey: "share_reports",
+    responseData: share_reports,
+  },
+  {
     endpoint: "/devices-service/devices/:siteId",
     responseKey: "devicesList",
     responseData: devicesList,
@@ -129,11 +151,6 @@ const endpoints = [
 
       return deviceStatus.status;
     },
-  },
-  {
-    endpoint: "/charts-service/charts/share-reports",
-    responseKey: "share_reports",
-    responseData: share_reports,
   },
 ];
 
