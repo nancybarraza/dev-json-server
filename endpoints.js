@@ -90,7 +90,17 @@ const endpoints = [
   {
     endpoint: "/sites-service/sites/:siteId/permissions/:userId",
     responseKey: "site_permissions_delete",
-    responseData: { status: '200 OK' },
+    responseData: { status: "200 OK" },
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/ca-certificate",
+    responseKey: "site_ca_certificate",
+    responseData: { ca_cert_url: "https://www.temporaryurl.com/ca.pem?key=348sd87s8y8y3482y4" },
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/token",
+    responseKey: "site_token",
+    responseData: { plcId: "EC1262", password: "7R8dDE9UhAfWEdvY" },
   },
   {
     endpoint: "/notifications-service/notifications/",
