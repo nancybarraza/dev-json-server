@@ -12,6 +12,7 @@ const siteEvents = require("./db/sites-service/site-events");
 const siteInformation = require("./db/sites-service/site-information");
 const siteBusBand = require("./db/sites-service/bus-band");
 const site_permissions = require("./db/sites-service/site-permissions");
+const siteTypes = require("./db/sites-service/site-types");
 
 // notifications-service
 const notificationsDismiss = require("./db/notifications-service/notification-dismiss");
@@ -101,6 +102,16 @@ const endpoints = [
     endpoint: "/sites-service/sites/:siteId/token",
     responseKey: "site_token",
     responseData: { plcId: "EC1262", password: "7R8dDE9UhAfWEdvY" },
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/tariff-structure",
+    responseKey: "site_tariff_structure",
+    responseData: { id: 1, utility: "UTILITY TEST", tariffStructure: "TARIFF STRUCTURE TEST" },
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/site-types",
+    responseKey: "site_types",
+    responseData: siteTypes,
   },
   {
     endpoint: "/notifications-service/notifications/",
