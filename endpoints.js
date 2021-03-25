@@ -13,6 +13,7 @@ const siteInformation = require("./db/sites-service/site-information");
 const siteBusBand = require("./db/sites-service/bus-band");
 const site_permissions = require("./db/sites-service/site-permissions");
 const siteTypes = require("./db/sites-service/site-types");
+const timeZones = require("./db/sites-service/time-zones");
 
 // notifications-service
 const notificationsDismiss = require("./db/notifications-service/notification-dismiss");
@@ -43,6 +44,16 @@ const endpoints = [
     endpoint: "/users-service/users/okta/users",
     responseKey: "okta_users",
     responseData: okta_users,
+  },
+  {
+    endpoint: "/sites-service/sites/site-types",
+    responseKey: "site_types",
+    responseData: siteTypes,
+  },
+  {
+    endpoint: "/sites-service/sites/time-zones?country=US",
+    responseKey: "site_time_zones",
+    responseData: timeZones,
   },
   {
     endpoint: "/sites-service/sites/",
@@ -107,11 +118,6 @@ const endpoints = [
     endpoint: "/sites-service/sites/:siteId/tariff-structure",
     responseKey: "site_tariff_structure",
     responseData: { id: 1, utility: "UTILITY TEST", tariffStructure: "TARIFF STRUCTURE TEST" },
-  },
-  {
-    endpoint: "/sites-service/sites/:siteId/site-types",
-    responseKey: "site_types",
-    responseData: siteTypes,
   },
   {
     endpoint: "/notifications-service/notifications/",
