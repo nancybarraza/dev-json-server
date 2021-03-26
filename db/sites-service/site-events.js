@@ -25,7 +25,7 @@ module.exports = [
       },
       {
         siteId: 1,
-        deviceGroupId: 11,
+        deviceGroupId: 9,
         deviceId: 5,
         deviceName: "BATT1",
         title: "Warning BATT1",
@@ -40,7 +40,7 @@ module.exports = [
     events: [
       {
         siteId: 1,
-        deviceGroupId: 11,
+        deviceGroupId: 5,
         deviceId: 261,
         deviceName: "BATT1",
         title: "Fault BATT1",
