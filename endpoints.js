@@ -2,6 +2,7 @@
 
 // users-service
 const user_Settings = require("./db/users-service/user-settings");
+const okta_users = require("./db/users-service/users-okta");
 
 // sites-service
 const sitesList = require("./db/sites-service/sitesList");
@@ -10,6 +11,9 @@ const auditLogList = require("./db/sites-service/audit-log-list");
 const siteEvents = require("./db/sites-service/site-events");
 const siteInformation = require("./db/sites-service/site-information");
 const siteBusBand = require("./db/sites-service/bus-band");
+const site_permissions = require("./db/sites-service/site-permissions");
+const siteTypes = require("./db/sites-service/site-types");
+const timeZones = require("./db/sites-service/time-zones");
 
 // notifications-service
 const notificationsDismiss = require("./db/notifications-service/notification-dismiss");
@@ -19,6 +23,7 @@ const notifications = require("./db/notifications-service/notifications");
 const charts_facility = require("./db/charts-service/facility-usage-production");
 const charts_energy = require("./db/charts-service/energy-production");
 const charts_ess = require("./db/charts-service/ess-states");
+const share_reports = require("./db/charts-service/share-reports");
 
 // device-service
 const devicesList = require("./db/device-service/devices-list");
@@ -34,6 +39,21 @@ const endpoints = [
     endpoint: "/users-service/users/settings",
     responseKey: "user_settings",
     responseData: user_Settings,
+  },
+  {
+    endpoint: "/users-service/users/okta/users",
+    responseKey: "okta_users",
+    responseData: okta_users,
+  },
+  {
+    endpoint: "/sites-service/sites/site-types",
+    responseKey: "site_types",
+    responseData: siteTypes,
+  },
+  {
+    endpoint: "/sites-service/sites/time-zones?country=US",
+    responseKey: "site_time_zones",
+    responseData: timeZones,
   },
   {
     endpoint: "/sites-service/sites/",
@@ -75,6 +95,31 @@ const endpoints = [
     responseData: siteBusBand,
   },
   {
+    endpoint: "/sites-service/sites/:siteId/permissions",
+    responseKey: "site_permissions",
+    responseData: site_permissions,
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/permissions/:userId",
+    responseKey: "site_permissions_delete",
+    responseData: { status: "200 OK" },
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/ca-certificate",
+    responseKey: "site_ca_certificate",
+    responseData: { ca_cert_url: "https://www.temporaryurl.com/ca.pem?key=348sd87s8y8y3482y4" },
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/token",
+    responseKey: "site_token",
+    responseData: { plcId: "EC1262", password: "7R8dDE9UhAfWEdvY" },
+  },
+  {
+    endpoint: "/sites-service/sites/:siteId/tariff-structure",
+    responseKey: "site_tariff_structure",
+    responseData: { id: 1, utility: "UTILITY TEST", tariffStructure: "TARIFF STRUCTURE TEST" },
+  },
+  {
     endpoint: "/notifications-service/notifications/",
     responseKey: "notifications",
     responseData: notifications,
@@ -103,6 +148,11 @@ const endpoints = [
     endpoint: "/charts-service/charts/vehicle-and-fleets",
     responseKey: "charts_vehicle",
     responseData: charts_vehicle,
+  },
+  {
+    endpoint: "/charts-service/charts/share-reports",
+    responseKey: "share_reports",
+    responseData: share_reports,
   },
   {
     endpoint: "/devices-service/devices/:siteId",
