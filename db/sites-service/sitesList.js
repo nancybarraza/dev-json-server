@@ -590,7 +590,7 @@ module.exports = [
             active: false,
           },
         ],
-        value: "4",
+        value: "2",
         active: false,
       },
     ],
