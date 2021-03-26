@@ -7,7 +7,7 @@ module.exports = [
         deviceGroupId: 1,
         deviceId: 26,
         deviceName: "BATT1",
-        title: "Warning BATT1",
+        title: "Warning AC Load",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys.",
         eventDateTime: "2020-12-03T12:54:28.555391",
@@ -15,7 +15,7 @@ module.exports = [
 
       {
         siteId: 1,
-        deviceGroupId: 7,
+        deviceGroupId: 8,
         deviceId: 261,
         deviceName: "BATT1",
         title: "Warning BATT1",
@@ -50,7 +50,7 @@ module.exports = [
       },
       {
         siteId: 1,
-        deviceGroupId: 5,
+        deviceGroupId: 12,
         deviceId: 264,
         deviceName: "BATT1",
         title: "Fault BATT1",
@@ -75,7 +75,7 @@ module.exports = [
     events: [
       {
         siteId: 1,
-        deviceGroupId: 4,
+        deviceGroupId: 10,
         deviceId: 263,
         deviceName: "BATT1",
         title: "Alarm BATT1",
@@ -85,7 +85,7 @@ module.exports = [
       },
       {
         siteId: 1,
-        deviceGroupId: 9,
+        deviceGroupId: 11,
         deviceId: 7,
         deviceName: "BATT1",
         title: "Alarm BATT1",
