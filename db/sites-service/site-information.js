@@ -45,5 +45,6 @@ module.exports = {
     tariff: "Pacific Gas Electric",
     utility: "NEM2VMSH",
   },
-  sharepointUrl: "https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration?ms.officeurl=sharepoint&rtc=2",
+  sharepointUrl:
+    "https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration?ms.officeurl=sharepoint&rtc=2",
 };

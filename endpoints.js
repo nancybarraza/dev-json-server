@@ -106,8 +106,8 @@ const endpoints = [
   },
   {
     endpoint: "/sites-service/sites/:siteId/ca-certificate",
-    responseKey: "site_ca_certificate",
-    responseData: { ca_cert_url: "https://www.temporaryurl.com/ca.pem?key=348sd87s8y8y3482y4" },
+    responseKey: "caCertificateUrl",
+    responseData: { url: "https://www.temporaryurl.com/ca.pem?key=348sd87s8y8y3482y4" },
   },
   {
     endpoint: "/sites-service/sites/:siteId/token",
