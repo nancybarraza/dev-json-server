@@ -595,4 +595,16 @@ module.exports = [
       },
     ],
   },
+  {
+    siteId: 6,
+    externalId: "25251sdsdSD321",
+    name: "Bad River",
+    plcId: "BADRIVER",
+    externalIcianId: "todd.connor@faithtechnologies.com",
+    icianName: "Todd Connor",
+    latitude: "39.9697894",
+    longitude: "-75.1585807",
+    companyName: "Atlantida Inc.",
+    points: [],
+  },
 ];
