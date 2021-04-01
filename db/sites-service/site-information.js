@@ -1,11 +1,12 @@
 module.exports = {
   siteId: 1,
-  externalId: "25251",
+  externalId: "a0h3K000000Xlh4QAC",
   name: "Site 1",
-  plcId: 50,
+  plcId: "BADRIVER",
   icianName: "ICIAN NAME",
   statusId: 4,
   connectionStatusId: 1,
+  isPermissioned: true,
   location: {
     locationId: 3,
     locationName: "Location Name",
@@ -42,8 +43,18 @@ module.exports = {
     longitude: -75.1585807,
   },
   tariffStructure: {
+    id: 1,
     tariff: "Pacific Gas Electric",
     utility: "NEM2VMSH",
+  },
+  timeZone: {
+    timeZoneId: 1,
+    name: "America/Los_Angeles",
+    country: "US"
+  },
+  siteType: {
+    siteTypeId: 1,
+    name: "Ignition"
   },
   sharepointUrl:
     "https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration?ms.officeurl=sharepoint&rtc=2",
