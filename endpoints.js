@@ -9,6 +9,7 @@ const userPolicy = require("./db/users-service/user-policy");
 const sitesList = require("./db/sites-service/sitesList");
 const sitesIcianUsers = require("./db/sites-service/assigned-users");
 const auditLogList = require("./db/sites-service/audit-log-list");
+const overview = require("./db/sites-service/overview");
 const siteEvents = require("./db/sites-service/site-events");
 const siteInformation = require("./db/sites-service/site-information");
 const siteBusBand = require("./db/sites-service/bus-band");
@@ -87,8 +88,9 @@ const endpoints = [
     responseData: siteEvents,
   },
   {
-    endpoint: "/sites-service/sites/:siteId/telemetry",
-    responseKey: "sites_telemetry",
+    endpoint: "/sites-service/sites/:siteId/overview",
+    responseKey: "sites_overview",
+    responseData: overview,
   },
   {
     endpoint: "/sites-service/sites/:siteId/audit-log",
