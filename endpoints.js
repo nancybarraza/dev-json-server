@@ -3,6 +3,7 @@
 // users-service
 const user_Settings = require("./db/users-service/user-settings");
 const okta_users = require("./db/users-service/users-okta");
+const userPolicy = require("./db/users-service/user-policy");
 
 // sites-service
 const sitesList = require("./db/sites-service/sitesList");
@@ -36,6 +37,11 @@ const deviceStatus = require("./db/device-service/device-status");
 const charts_vehicle = require("./db/charts-service/vehicle-and-fleet");
 
 const endpoints = [
+  {
+    endpoint: "/users-service/users/policy",
+    responseKey: "user_policy",
+    responseData: userPolicy,
+  },
   {
     endpoint: "/users-service/users/settings",
     responseKey: "user_settings",
