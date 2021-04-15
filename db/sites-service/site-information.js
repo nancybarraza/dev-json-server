@@ -43,9 +43,9 @@ module.exports = {
     longitude: -75.1585807,
   },
   tariffStructure: {
-    id: 1,
-    tariff: "Pacific Gas Electric",
-    utility: "NEM2VMSH",
+    "id": 1,
+    "utility": "Pacific Gas Electric",
+    "tariffStructure": "NEM2VMSH"
   },
   timeZone: {
     timeZoneId: 1,

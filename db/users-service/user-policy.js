@@ -1,5 +1,5 @@
 module.exports = {
-    "consentEffectiveDate": "2022-12-31 12:00:00",
+    "consentEffectiveDate": "2022-09-15 12:00:00",
     "consentTimestamp": "2021-04-06 18:34:42",
     "active": true,
     "urlPolicy": "https://energybyentech.com/wp-content/uploads/2021/02/EnTech_Solutions_-_Privacy_Policy.pdf",

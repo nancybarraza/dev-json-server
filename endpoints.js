@@ -63,6 +63,11 @@ const endpoints = [
     responseData: timeZones,
   },
   {
+    endpoint: "/sites-service/sites/:siteId/time-zone",
+    responseKey: "site_update_time_zone",
+    responseData: { timeZoneId: 2, name: "America/Louisville", country: "US" },
+  },
+  {
     endpoint: "/sites-service/sites/",
     responseKey: "sites",
     responseData: sitesList,
