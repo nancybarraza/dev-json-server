@@ -11,7 +11,7 @@ const saveRequestData = (request) => {
   );
 
   return endpointConfig && endpointConfig.responseData
-    ? endpointConfig.responseData
+    ? validationResponseData(request, endpointConfig.responseData)
     : {};
 };
 
@@ -38,6 +38,27 @@ const getSpecialData = (originalUrl) => {
         endpointConfig.responseData
       )
     : undefined;
+};
+
+/**
+ * @method validationResponseData
+ * Validate response data with URLS for modifications over response data
+ * @param {Object} request receives request data
+ * @param {Object} responseData receives response data
+ * @returns {Object}
+ */
+const validationResponseData = (request, responseData) => {
+  if (request.url === '/site_permissions' && request.method === 'PUT') {
+    if (request.body.users) {
+      const newUser = request.body.users[0];
+      responseData.users.push({
+        userId: 20,
+        isEditable: true, 
+        ...newUser,
+      });
+    }    
+  }
+  return responseData;
 };
 
 module.exports = { getRequestData, saveRequestData };
