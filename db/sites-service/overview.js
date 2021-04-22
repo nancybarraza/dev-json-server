@@ -24,7 +24,7 @@ module.exports = {
       totalLoad: { currentFlow: 223, units: "Watt", ts: null },
       gridFlow: { currentFlow: 0, units: "Watt", ts: 1619043837769 },
       dcBusFlow: { currentFlow: 223, units: "Watt", ts: 1619043837769 },
-      inverter: { cummulativePower: 3240, units: "VA", ts: 1619043838943 },
+      inverter: { cumulativePower: 3240, units: "VA", ts: 1619043838943 },
     },
     {
       deviceGroupId: 6,
@@ -34,7 +34,7 @@ module.exports = {
       totalLoad: { currentFlow: 343434, units: "Watt", ts: null },
       gridFlow: { currentFlow: 0, units: null, ts: 0 },
       dcBusFlow: { currentFlow: 343434, units: "Watt", ts: 1619043837769 },
-      inverter: { cummulativePower: 5500, units: "VA", ts: 1619043838943 },
+      inverter: { cumulativePower: 5500, units: "VA", ts: 1619043838943 },
     },
     {
       deviceGroupId: 9,
@@ -44,7 +44,7 @@ module.exports = {
       totalLoad: { currentFlow: 555, units: "Watt", ts: null },
       gridFlow: { currentFlow: 333, units: "Watt", ts: 1619043837769 },
       dcBusFlow: { currentFlow: 222, units: "Watt", ts: 1619043837769 },
-      inverter: { cummulativePower: 4400, units: "VA", ts: 1619043838943 },
+      inverter: { cumulativePower: 4400, units: "VA", ts: 1619043838943 },
     },
   ],
   microGridProductionAssets: [
@@ -56,7 +56,7 @@ module.exports = {
       gridFlow: { currentFlow: 222, units: "Watt", ts: 1619043837769 },
       maxPowerRating: { currentFlow: 140, units: "Watt", ts: 1619043838943 },
       currentCapacity: null,
-      inverter: { cummulativePower: 5500, units: "VA", ts: 1619043838943 },
+      inverter: { cumulativePower: 5500, units: "VA", ts: 1619043838943 },
     },
     {
       deviceGroupId: 3,
@@ -66,7 +66,7 @@ module.exports = {
       gridFlow: { currentFlow: 4500, units: "Watt", ts: 1619043837769 },
       maxPowerRating: { currentFlow: 120, units: "Watt", ts: 1619043838943 },
       currentCapacity: null,
-      inverter: { cummulativePower: 5500, units: "VA", ts: 1619043838943 },
+      inverter: { cumulativePower: 5500, units: "VA", ts: 1619043838943 },
     },
     {
       deviceGroupId: 4,
@@ -76,7 +76,7 @@ module.exports = {
       gridFlow: { currentFlow: 4500, units: "Watt", ts: 1619043837769 },
       maxPowerRating: { currentFlow: 120, units: "Watt", ts: 1619043838943 },
       currentCapacity: null,
-      inverter: { cummulativePower: 5500, units: "VA", ts: 1619043838943 },
+      inverter: { cumulativePower: 5500, units: "VA", ts: 1619043838943 },
     },
     {
       deviceGroupId: 1,
@@ -86,7 +86,7 @@ module.exports = {
       gridFlow: { currentFlow: 666, units: "Watt", ts: 1619043837769 },
       maxPowerRating: { currentFlow: 7888, units: "Watt", ts: 1619043838943 },
       currentCapacity: { currentFlow: 0, units: null, ts: 0 },
-      inverter: { cummulativePower: 47, units: "VA", ts: 1619043838943 },
+      inverter: { cumulativePower: 47, units: "VA", ts: 1619043838943 },
     },
   ],
 };
