@@ -1,4 +1,8 @@
-module.exports = [
+module.exports = {
+    date: 1614885453427
+    page: 1,
+    siteId: 2,
+    results: [
   {
     siteId: 1,
     actionType : "Change in Bus Band Configuration",
@@ -63,3 +67,4 @@ module.exports = [
     date : "1614885864283"
   },
 ];
+}
