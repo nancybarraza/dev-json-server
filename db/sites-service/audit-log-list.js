@@ -66,5 +66,5 @@ module.exports = {
     source : "David Butler",
     date : "1614885864283"
   },
-];
+]
 }
