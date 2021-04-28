@@ -2,6 +2,7 @@ module.exports = {
 	date: 1614885453427,
 	page: 1,
 	siteId: 2,
+	totalResults: 2,
 	results: [
 		{
 			siteId: 1,
